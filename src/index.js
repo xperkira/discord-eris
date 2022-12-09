@@ -9,6 +9,19 @@ bot.on('messageCreate', (message) => {
 	} else if (message.content === 'Hello') {
 		bot.createMessage(message.channel.id, 'Choo choo! 🚅');
 	}
+	
+	
+	
+});
+
+ot.on('messageCreate', (message) => {
+	if (message.content === '/help') {
+		bot.createMessage(message.channel.id, 'howdy');
+	} else if (message.content === 'Hello') {
+		bot.createMessage(message.channel.id, 'Choo choo! 🚅');
+	}
 });
 
 bot.connect();
+
+
